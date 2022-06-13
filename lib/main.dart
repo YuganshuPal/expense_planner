@@ -52,20 +52,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   //String titleInput;
-  final List<Transaction> _userTransaction = [
-    //   Transaction(
-    //     id: 't1',
-    //     title: 'new shoes',
-    //     amount: 69.9,
-    //     date: DateTime.now(),
-    //   ),
-    //   Transaction(
-    //     id: 't2',
-    //     title: 'Grocery',
-    //     amount: 19.9,
-    //     date: DateTime.now(),
-    //   )
-  ];
+  final List<Transaction> _userTransaction = [];
   bool _showChart = false;
   List<Transaction> get _recentTransactions {
     return _userTransaction.where((tx) {
